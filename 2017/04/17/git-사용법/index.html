@@ -8,19 +8,19 @@
     
         <meta name="keywords" content="Github" />
     
-    <meta name="description" content="Wonmo Yang, IT BLog">
+    <meta name="description" content="INDEX   환경설정  기본  저장소  Git TIp.     환경설정 – git을 사용하는 사용자 정보를 설정. 　소스변경을 한 사용자가 누구인지하는 추적등에 필요함.    Command Description     git --version git 버전 확인   git config git 환경설정    Example12345678910$ git --">
 <meta name="keywords" content="Github">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git 명령어">
 <meta property="og:url" content="http://wonmoyang.github.io/2017/04/17/git-사용법/index.html">
 <meta property="og:site_name" content="Writer, IT blog">
-<meta property="og:description" content="Wonmo Yang, IT BLog">
-<meta property="og:image" content="http://wonmoyang.github.io/images/github.jpg">
-<meta property="og:updated_time" content="2017-04-25T05:10:52.526Z">
+<meta property="og:description" content="INDEX   환경설정  기본  저장소  Git TIp.     환경설정 – git을 사용하는 사용자 정보를 설정. 　소스변경을 한 사용자가 누구인지하는 추적등에 필요함.    Command Description     git --version git 버전 확인   git config git 환경설정    Example12345678910$ git --">
+<meta property="og:image" content="http://wonmoyang.github.io/2017/04/17/git-사용법/git.png">
+<meta property="og:updated_time" content="2017-04-26T05:58:56.900Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git 명령어">
-<meta name="twitter:description" content="Wonmo Yang, IT BLog">
-<meta name="twitter:image" content="http://wonmoyang.github.io/images/github.jpg">
+<meta name="twitter:description" content="INDEX   환경설정  기본  저장소  Git TIp.     환경설정 – git을 사용하는 사용자 정보를 설정. 　소스변경을 한 사용자가 누구인지하는 추적등에 필요함.    Command Description     git --version git 버전 확인   git config git 환경설정    Example12345678910$ git --">
+<meta name="twitter:image" content="http://wonmoyang.github.io/2017/04/17/git-사용법/git.png">
     
 
     
@@ -177,14 +177,120 @@ ga('send', 'pageview');
         
         
         <div class="article-entry" itemprop="articleBody">
-            
+            <img src="/2017/04/17/git-사용법/git.png" alt="git" title="git">
+<p><br></p>
+<h2 id="INDEX"><a href="#INDEX" class="headerlink" title="INDEX"></a>INDEX</h2><hr>
+<ul>
+<li><strong> <a href="#config">환경설정</a></strong></li>
+<li><strong> <a href="#basic">기본</a></strong></li>
+<li><strong> <a href="#repository">저장소</a></strong></li>
+<li><strong> <a href="#tip">Git TIp.</a></strong></li>
+</ul>
+<hr>
+<p><br></p>
+<p><i id="config"></i></p>
+<h3 id="환경설정"><a href="#환경설정" class="headerlink" title="환경설정"></a>환경설정</h3><p> – git을 사용하는 <code>사용자 정보를 설정.</code><br> 　<code>소스변경을 한 사용자</code>가 누구인지하는 <code>추적</code>등에 필요함.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git --version</code></td>
+<td>git 버전 확인</td>
+</tr>
+<tr>
+<td><code>git config</code></td>
+<td>git 환경설정</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$ git --version</div><div class="line"></div><div class="line"><span class="comment">## git 환경변수 보기</span></div><div class="line">$ git config --global --list</div><div class="line"><span class="comment">## 사용자 명 변경</span></div><div class="line">$ git config --global user.name <span class="string">"wonmoyang"</span></div><div class="line"><span class="comment">## 사용자 메일 변경</span></div><div class="line">$ git config --global user.email <span class="string">"yangwm89@gmail.com"</span></div><div class="line"><span class="comment">## git 메세지 color 변경</span></div><div class="line">$ git config --global color.ui <span class="string">"auto"</span></div></pre></td></tr></table></figure>
+<p><br></p>
+<p><i id="basic"></i></p>
+<h3 id="기본"><a href="#기본" class="headerlink" title="기본"></a>기본</h3><p> – 파일 <code>추적</code>, <code>커밋</code>, <code>발행</code> 등 기본적인 명령어</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git add</code></td>
+<td>git add명령을 통해 파일을 add해야 git이 추적을 시작한다.</td>
+</tr>
+<tr>
+<td><code>git status</code></td>
+<td>git 파일 상태 확인 (수정된 파일이나 add할 파일이 있는지 등)</td>
+</tr>
+<tr>
+<td><code>git commit</code></td>
+<td>스테이징에 올라가있는 파일들을 커밋</td>
+</tr>
+<tr>
+<td><code>git checkout</code></td>
+<td>파일 변경내용 되돌리기</td>
+</tr>
+<tr>
+<td><code>git reset</code></td>
+<td>git 파일 상태를 Unstage로 변경</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Example-1"><a href="#Example-1" class="headerlink" title="Example"></a>Example</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">$ git add README <span class="comment"># 새로 생성되거나 변경된 파일을 add. (rm으로 삭제된 파일은 제외)</span></div><div class="line">$ git add -u README <span class="comment"># 이전 스테이지와 비교해서 변경된 부분만 add.</span></div><div class="line">$ git add -A README <span class="comment"># git add와 git add -u를 합한 형태 (생성,수정,삭제 모든파일을 add)</span></div><div class="line"></div><div class="line"><span class="comment">## git 파일 상태확인</span></div><div class="line">$ git status</div><div class="line"></div><div class="line"><span class="comment">## 파일 커밋</span></div><div class="line">$ git commit <span class="_">-a</span> <span class="comment">## 추적중인 모든 변경된 파일을 commit</span></div><div class="line">$ git commit -m <span class="string">"메세지"</span> <span class="comment">## 커밋 메세지 입력 후 commit</span></div><div class="line"></div><div class="line"><span class="comment">## 파일의 변경내용을 취소, 이전 커밋상태로 되돌리기.</span></div><div class="line">$ git checkout README</div><div class="line">$ git checkout HEAD <span class="comment"># HEAD에 있는 정보를 기준으로 되돌림.</span></div><div class="line"></div><div class="line"><span class="comment">## git add . 등으로 스테이징된 파일을 언스테이징시킴.</span></div><div class="line">git reset</div><div class="line">git reset HEAD README</div></pre></td></tr></table></figure>
+<p><br></p>
+<p><i id="repository"></i></p>
+<h3 id="저장소"><a href="#저장소" class="headerlink" title="저장소"></a>저장소</h3><table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git init</code></td>
+<td>새로운 git 저장소 생성</td>
+</tr>
+<tr>
+<td><code>git clone</code></td>
+<td>원격 저장소를 복제하여 저장소 생성</td>
+</tr>
+<tr>
+<td><code>git remote</code></td>
+<td>git 저장소명, URL관리</td>
+</tr>
+<tr>
+<td><code>git fetch</code></td>
+<td>원격 저장소로부터 로컬을 동기화</td>
+</tr>
+<tr>
+<td><code>git pull</code></td>
+<td>원격 저장소로부터 로컬을 동기화하고 merge</td>
+</tr>
+<tr>
+<td><code>git push</code></td>
+<td>원격 저장소에 변경된 내용 발행</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Example-2"><a href="#Example-2" class="headerlink" title="Example"></a>Example</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">$ git init</div><div class="line"></div><div class="line"><span class="comment">## example 폴더에 저장소 복제.</span></div><div class="line"><span class="comment">## 폴더명 생략가능.</span></div><div class="line">$ git <span class="built_in">clone</span> git://github.com/wonmoyang/example.git example</div><div class="line"></div><div class="line"><span class="comment"># 저장소명을 출력 (기본으로 origin을 많이 씀.)</span></div><div class="line">$ git remote</div><div class="line">$ git remote -v <span class="comment"># 저장소명 + URL 출력</span></div><div class="line">$ git remote add origin https://github.com/wonmoyang/example.git <span class="comment"># URL을 원격저장소명으로 저장</span></div><div class="line">$ git remote remove origin : 원격저장소명을 삭제</div><div class="line"></div><div class="line"><span class="comment"># 저장소 &lt;-&gt; 로컬 동기화</span></div><div class="line">$ git fetch</div><div class="line"></div><div class="line"><span class="comment"># 저장소 &lt;-&gt; 로컬 동기화 + merge</span></div><div class="line">$ git pull</div><div class="line"></div><div class="line"><span class="comment"># 원격저장소명이 가리키는 원격저장소로 최신 커밋상태를 업로드</span></div><div class="line">$ git push - u origin master</div></pre></td></tr></table></figure>
+<p><br></p>
+<p><i id="tip"></i></p>
+<h3 id="Git-Tip"><a href="#Git-Tip" class="headerlink" title="Git Tip."></a>Git Tip.</h3><p>커밋 수정하기.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git commit -m <span class="string">'initial commit'</span> </div><div class="line">git add README</div><div class="line">git commit --amend</div></pre></td></tr></table></figure></p>
+
         </div>
         <footer class="article-footer">
             
 
 
 
-    <a data-url="http://wonmoyang.github.io/2017/04/17/git-사용법/" data-id="cj1vgjdxc00021ghmidvp0lca" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="http://wonmoyang.github.io/2017/04/17/git-사용법/" data-id="cj1ykm0da000188hmbde5stdj" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -364,7 +470,7 @@ ga('send', 'pageview');
                             <a href="/2017/04/17/git-사용법/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/github.jpg)" alt="git 명령어" class="thumbnail-image"></span>
+        <span style="background-image:url(/2017/04/17/git-사용법/git.png)" alt="git 명령어" class="thumbnail-image"></span>
     
     
 </a>
